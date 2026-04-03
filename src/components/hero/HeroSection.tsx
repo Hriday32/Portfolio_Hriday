@@ -179,13 +179,13 @@ export default function HeroSection() {
           />
         </div> */}
         <div
-          className="relative flex flex-col items-center justify-center mt-40 lg:mt-36 order-2"
+          className="relative flex flex-col items-center justify-center mt-40 lg:mt-16 order-2"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
           {/* Circle */}
           <div
-            className={`relative w-[24rem] mt-10 md:w-[28rem] md:h-[20rem] rounded-t-full ${circleColor} transition-colors duration-500`}
+            className={`relative lg:h-[40rem] w-[50rem] md:w-[28rem] md:h-[30rem] rounded-t-full ${circleColor} transition-colors duration-500`}
           ></div>
 
           {/* Image */}
@@ -195,7 +195,7 @@ export default function HeroSection() {
             width={900}
             height={900}
             priority
-            className={`absolute -translate-y-7 bottom-0 z-10 object-contain scale-125 transition-transform duration-500 ${imageFilter}`}
+            className={`absolute -translate-y-94 bottom-0 z-10 object-contain scale-125 transition-transform duration-500 ${imageFilter}`}
           />
         </div>
 
