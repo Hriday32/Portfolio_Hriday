@@ -47,6 +47,9 @@ export default function HeroSection() {
     ? "filter brightness-75 contrast-115"
     : "filter brightness-100 contrast-105";
 
+  const basePath =
+    process.env.NODE_ENV === "production" ? "/Portfolio_Hriday" : "";
+
   return (
     <section
       className={`relative w-full min-h-screen flex flex-col justify-center items-center md:px-16 overflow-hidden transition-colors duration-500 ${bgColor}`}
@@ -78,7 +81,7 @@ export default function HeroSection() {
           animate={isHovered ? "hover" : "rest"}
         >
           <Image
-            src="/icons/wave1.png"
+            src={`${basePath}/icons/wave1.png`}
             alt="wave1"
             width={30}
             height={30}
@@ -93,7 +96,7 @@ export default function HeroSection() {
           animate={isHovered ? "hover" : "rest"}
         >
           <Image
-            src="/icons/wave2.png"
+            src={`${basePath}/icons/wave2.png`}
             alt="wave2"
             width={64}
             height={64}
@@ -187,7 +190,7 @@ export default function HeroSection() {
 
           {/* Image */}
           <Image
-            src="/images/ram.png"
+            src={`${basePath}/images/ram.png`}
             alt="hriday"
             width={900}
             height={900}
