@@ -83,7 +83,7 @@ export default function ProjectDetailPage() {
   const goToPrev = () => {
     if (selectedImage !== null) {
       setSelectedImage(
-        (selectedImage - 1 + project.images.length) % project.images.length
+        (selectedImage - 1 + project.images.length) % project.images.length,
       );
     }
   };
