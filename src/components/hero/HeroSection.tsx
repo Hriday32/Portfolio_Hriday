@@ -40,15 +40,19 @@ export default function HeroSection() {
   const textColor = isDark ? "text-gray-100" : "text-gray-900";
   const subTextColor = isDark ? "text-gray-400" : "text-gray-700";
   const circleColor = isDark ? "bg-orange-300" : "bg-orange-400";
-  const quoteIcon = isDark
-    ? "/icons/quote-up-white.png"
-    : "/icons/quote-up.png";
-  const imageFilter = isDark
-    ? "filter brightness-75 contrast-115"
-    : "filter brightness-100 contrast-105";
 
   const basePath =
     process.env.NODE_ENV === "production" ? "/Portfolio_Hriday" : "";
+  const getImagePath = (path: any) =>
+    `${basePath}${path.startsWith("/") ? path : `/${path}`}`;
+
+  const quoteIcon = getImagePath(
+    isDark ? "/icons/quote-up-white.png" : "/icons/quote-up.png",
+  );
+
+  const imageFilter = isDark
+    ? "brightness-75 contrast-115"
+    : "brightness-100 contrast-105";
 
   return (
     <section
