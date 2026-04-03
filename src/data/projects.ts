@@ -11,6 +11,9 @@ export interface Project {
   goal?: string;
 }
 
+const basePath =
+  process.env.NODE_ENV === "production" ? "/Portfolio_Hriday" : "";
+
 export const projects: Project[] = [
   {
     slug: "school-management-system",
@@ -58,10 +61,10 @@ export const projects: Project[] = [
       "A full-stack hospital management system designed to efficiently manage patient records, appointments, billing, and hospital operations with a secure and user-friendly interface.",
 
     images: [
-      { src: "/images/projects/hospital/Admin.png" },
-      { src: "/images/projects/hospital/HeadNurse.png" },
-      { src: "/images/projects/hospital/Pharamacy.png" },
-      { src: "/images/projects/hospital/Reception.png" },
+      { src: `${basePath}/images/projects/hospital/Admin.png` },
+      { src: `${basePath}/images/projects/hospital/HeadNurse.png` },
+      { src: `${basePath}/images/projects/hospital/Pharamacy.png` },
+      { src: `${basePath}/images/projects/hospital/Reception.png` },
     ],
 
     technologies: [
