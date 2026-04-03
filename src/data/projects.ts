@@ -22,9 +22,9 @@ export const projects: Project[] = [
       "A comprehensive school management system designed to streamline academic and administrative operations, including student records, attendance tracking, class management, and communication between teachers, students, and administrators.",
 
     images: [
-      { src: "/images/projects/school/school.webp" },
-      { src: "/images/projects/school/school2.webp" },
-      { src: "/images/projects/school/school3.webp" },
+      { src: `${basePath}/images/projects/school/school.webp` },
+      { src: `${basePath}/images/projects/school/school2.webp` },
+      { src: `${basePath}/images/projects/school/school3.webp` },
     ],
 
     technologies: [
@@ -102,9 +102,9 @@ export const projects: Project[] = [
       "A modern restaurant management system that streamlines order processing, table management, billing, and inventory tracking with an intuitive and responsive interface.",
 
     images: [
-      { src: "/images/projects/resturent/resturent.webp" },
-      { src: "/images/projects/resturent/resturent1.webp" },
-      { src: "/images/projects/resturent/resturent3.webp" },
+      { src: `${basePath}/images/projects/resturent/resturent.webp` },
+      { src: `${basePath}/images/projects/resturent/resturent1.webp` },
+      { src: `${basePath}/images/projects/resturent/resturent3.webp` },
     ],
 
     technologies: [
@@ -143,10 +143,10 @@ export const projects: Project[] = [
       "A modern and aesthetically designed restaurant website inspired by calm and nature-driven visuals, combined with a powerful management system. The platform highlights the restaurant’s ambiance, menu, events, and brand story while enabling efficient reservation handling, content management, and customer engagement.",
 
     images: [
-      { src: "/images/projects/website/buddha1.png" },
-      { src: "/images/projects/website/buddha2.png" },
-      { src: "/images/projects/website/buddha3.png" },
-      { src: "/images/projects/website/buddha4.png" },
+      { src: `${basePath}/images/projects/website/buddha1.png` },
+      { src: `${basePath}/images/projects/website/buddha2.png` },
+      { src: `${basePath}/images/projects/website/buddha3.png` },
+      { src: `${basePath}/images/projects/website/buddha4.png` },
     ],
 
     technologies: [
