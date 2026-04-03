@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 interface GlassCardProps {
   title: string;
@@ -20,9 +20,27 @@ interface CSSVariableStyle extends React.CSSProperties {
 
 export default function GlassCard({ title, images }: GlassCardProps) {
   const layerStyles = [
-    { top: "8px", scale: "0.9", opacity: "1", zIndex: 1, bg: "rgba(255,255,255,0.12)" },
-    { top: "28px", scale: "0.95", opacity: "1", zIndex: 5, bg: "rgba(255,255,255,0.18)" },
-    { top: "48px", scale: "1", opacity: "1", zIndex: 10, bg: "rgba(255,255,255,0.25)" },
+    {
+      top: "8px",
+      scale: "0.9",
+      opacity: "1",
+      zIndex: 1,
+      bg: "rgba(255,255,255,0.12)",
+    },
+    {
+      top: "28px",
+      scale: "0.95",
+      opacity: "1",
+      zIndex: 5,
+      bg: "rgba(255,255,255,0.18)",
+    },
+    {
+      top: "48px",
+      scale: "1",
+      opacity: "1",
+      zIndex: 10,
+      bg: "rgba(255,255,255,0.25)",
+    },
   ];
 
   // ✅ Properly typed inline style object
@@ -31,8 +49,10 @@ export default function GlassCard({ title, images }: GlassCardProps) {
     "--s": "45px",
     "--x": "20px",
     "--y": "20px",
-    "--_m": "/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%, #0000 72%)",
-    "--_g": "conic-gradient(from 90deg at calc(100% - var(--r)) calc(100% - var(--r)), #0000 25%, #000 0)",
+    "--_m":
+      "/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%, #0000 72%)",
+    "--_g":
+      "conic-gradient(from 90deg at calc(100% - var(--r)) calc(100% - var(--r)), #0000 25%, #000 0)",
     "--_d": "(var(--s) + var(--r))",
     mask: `
       calc(100% - var(--_d) - var(--x)) 100% var(--_m),
