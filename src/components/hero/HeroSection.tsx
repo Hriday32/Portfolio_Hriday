@@ -43,7 +43,7 @@ export default function HeroSection() {
 
   const basePath =
     process.env.NODE_ENV === "production" ? "/Portfolio_Hriday" : "";
-  const getImagePath = (path: any) =>
+  const getImagePath = (path: string) =>
     `${basePath}${path.startsWith("/") ? path : `/${path}`}`;
 
   const quoteIcon = getImagePath(
