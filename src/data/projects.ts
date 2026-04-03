@@ -133,49 +133,48 @@ export const projects: Project[] = [
     goal: "To develop an efficient and scalable system that simplifies restaurant operations, enhances customer experience, and supports business growth.",
   },
   {
-  slug: "lumbini-restaurant-website",
-  title: "Lumbini Restaurant Website & Management System",
+    slug: "lumbini-restaurant-website",
+    title: "Lumbini Restaurant Website & Management System",
 
-  description:
-    "A modern and aesthetically designed restaurant website inspired by calm and nature-driven visuals, combined with a powerful management system. The platform highlights the restaurant’s ambiance, menu, events, and brand story while enabling efficient reservation handling, content management, and customer engagement.",
+    description:
+      "A modern and aesthetically designed restaurant website inspired by calm and nature-driven visuals, combined with a powerful management system. The platform highlights the restaurant’s ambiance, menu, events, and brand story while enabling efficient reservation handling, content management, and customer engagement.",
 
-  images: [
-    { src: "/images/projects/website/buddha1.png" },
-    { src: "/images/projects/website/buddha2.png" },
-    { src: "/images/projects/website/buddha3.png" },
-    { src: "/images/projects/website/buddha4.png" },
-  ],
+    images: [
+      { src: "/images/projects/website/buddha1.png" },
+      { src: "/images/projects/website/buddha2.png" },
+      { src: "/images/projects/website/buddha3.png" },
+      { src: "/images/projects/website/buddha4.png" },
+    ],
 
-  technologies: [
-    "React",
-    "Tailwind CSS",
-    "Material UI",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Redux Toolkit",
-    "JWT"
-  ],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Material UI",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redux Toolkit",
+      "JWT",
+    ],
 
-  github: "#",
-  status: "Completed",
+    github: "#",
+    status: "Completed",
 
-  features: [
-    "Elegant landing page with nature-inspired and calming UI design",
-    "Hero section with storytelling content and smooth user experience",
-    "About section presenting restaurant story and philosophy",
-    "Dynamic menu system with categorized food items and pricing",
-    "Online table reservation and booking system",
-    "Events and special offers management",
-    "Gallery section showcasing food, ambiance, and experiences",
-    "News & blog section for updates and engagement",
-    "Admin dashboard for managing content, menu, and reservations",
-    "Secure authentication with role-based access",
-    "Responsive design optimized for all devices",
-    "Smooth animations and modern UI/UX design"
-  ],
+    features: [
+      "Elegant landing page with nature-inspired and calming UI design",
+      "Hero section with storytelling content and smooth user experience",
+      "About section presenting restaurant story and philosophy",
+      "Dynamic menu system with categorized food items and pricing",
+      "Online table reservation and booking system",
+      "Events and special offers management",
+      "Gallery section showcasing food, ambiance, and experiences",
+      "News & blog section for updates and engagement",
+      "Admin dashboard for managing content, menu, and reservations",
+      "Secure authentication with role-based access",
+      "Responsive design optimized for all devices",
+      "Smooth animations and modern UI/UX design",
+    ],
 
-  goal:
-    "To build a visually engaging and user-friendly restaurant platform that reflects the brand’s calm and premium dining experience while providing efficient tools for managing operations, customer interactions, and business growth."
-}
+    goal: "To build a visually engaging and user-friendly restaurant platform that reflects the brand’s calm and premium dining experience while providing efficient tools for managing operations, customer interactions, and business growth.",
+  },
 ];
