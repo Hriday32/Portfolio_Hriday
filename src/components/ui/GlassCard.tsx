@@ -65,6 +65,12 @@ export default function GlassCard({ title, images }: GlassCardProps) {
     maskRepeat: "no-repeat",
   };
 
+  // const basePath =
+  //   process.env.NODE_ENV === "production" ? "/Portfolio_Hriday" : "";
+
+  // const getImagePath = (path: any) =>
+  //   `${basePath}${path.startsWith("/") ? path : `/${path}`}`;
+
   return (
     <div className="relative w-[320px] h-[340px] group">
       {/* Main Card */}
@@ -105,6 +111,7 @@ export default function GlassCard({ title, images }: GlassCardProps) {
                 }}
               >
                 <Image
+                  // src={getImagePath(img.src)}
                   src={img.src}
                   alt={img.alt || `image-${i}`}
                   width={280}

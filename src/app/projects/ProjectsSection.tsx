@@ -20,11 +20,17 @@ export default function ProjectsSection() {
 
   const goToSlide = (index: number) => swiperInstance?.slideToLoop(index);
 
+  const basePath =
+    process.env.NODE_ENV === "production" ? "/Portfolio_Hriday" : "";
+
   return (
     <section
       id="projects"
       className="min-h-screen py-20 px-6 sm:px-12 lg:px-20 rounded-4xl bg-gradient-to-br from-gray-600 to-black"
-      style={{ backgroundImage: "url('/images/bg.jpg')" }}
+      // style={{ backgroundImage: "url('/images/bg.jpg')" }}
+      style={{
+        backgroundImage: `url('${basePath}/images/bg.jpg')`,
+      }}
     >
       <div className="container mx-auto max-w-7xl px-6 sm:px-10 mb-16">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
@@ -91,7 +97,9 @@ export default function ProjectsSection() {
         }
 
         .projects-swiper .swiper-slide {
-          transition: transform 0.3s ease, opacity 0.3s ease;
+          transition:
+            transform 0.3s ease,
+            opacity 0.3s ease;
         }
 
         .projects-swiper .swiper-slide-active {
